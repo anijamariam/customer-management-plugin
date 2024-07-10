@@ -1,4 +1,3 @@
-
 Customer Management Plugin
 Username : admin
 Password : customer_management
@@ -13,16 +12,26 @@ Features
 •	Role based access on backend WordPress admin
 Installation
 1.	Upload the Plugin Files to Your WordPress Site:
-o	Download the plugin files and extract them.
+o	Download the customer-management plugin files and extract them.
 o	Upload the extracted folder to the /wp-content/plugins/ directory on your WordPress site.
-2.	Activate the Plugin:
-o	Log in to your WordPress admin dashboard.
+o	Download the customer-theme theme files and extract them.
+o	Upload the extracted folder to the /wp-content/theme/ directory on your WordPress site.
+2.	Steps to Import the SQL Dump
+Using phpMyAdmin 
+o	Open phpMyAdmin and select your WordPress database. 
+o	Click the "Import" tab.
+o	Click "Choose File" and select the ` customer_management` 
+o	Click "Go" to import the SQL file.
+
+3.	Activate the Plugin:
+o	Log in to your WordPress admin dashboard using XAMPP:
+o	Start Apache and MySQL from the XAMPP control panel.
+o	Open your web browser and go to http://localhost/ to access the XAMPP dashboard.
+o	Navigate to your WordPress project folder, e.g., http://localhost/’your_project_folder’/wp-admin.
+o	Log in to your WordPress admin dashboard using your admin credentials. Username : admin
+Password : customer_management 
 o	Go to Plugins > Installed Plugins.
 o	Find the Customer Management plugin in the list and click Activate.
-3.	Default Admin User:
-o	Upon activation, the plugin has a default admin user.
-o	Username: admin
-o	Password: customer_management
 
 3. Redirect Users After Login
 To ensure users are redirected to the welcome page upon login, the plugin includes a custom login redirect function.
